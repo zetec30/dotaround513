@@ -6,7 +6,7 @@ let Btn1,Btn2,Btn3,Btn4 = true;
 
 // Lets put all our map options in a single object
 let userMarker;
-let mousePos;
+
 let mapLoaded;
 let zone;
 let tarArray = [
@@ -250,13 +250,7 @@ function BtnFalse(){
       });
     });
   }
-  function draw(){
-    var pos = [];
 
-    pos = myMap.pixelToLatLng(mouseX, mouseY);
-    pos = [pos.lng, pos.lat];
-    console.log(mouseX, mouseY);
-  }
 }
 
 }
